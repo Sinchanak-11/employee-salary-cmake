@@ -27,7 +27,7 @@ pipeline {
             steps {
                 sh '''
                 cd build\\Debug
-                EmployeeSalary.exe
+                EmployeeSalary
                 '''
             }
         }
