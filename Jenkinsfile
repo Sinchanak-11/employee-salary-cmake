@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build CMake Project') {
             steps {
-                bat '''
+                sh '''
                 mkdir build
                 cd build
                 cmake ..
