@@ -25,7 +25,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                bat '''
+                sh '''
                 cd build\\Debug
                 EmployeeSalary.exe
                 '''
