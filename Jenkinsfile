@@ -15,6 +15,7 @@ pipeline {
         stage('Build CMake Project') {
             steps {
                 sh '''
+                rm -rf build
                 mkdir build
                 cd build
                 cmake ..
@@ -26,8 +27,8 @@ pipeline {
         stage('Run Application') {
             steps {
                 sh '''
-                cd build\\Debug
-                EmployeeSalary
+                 cd build
+                 echo "101" | ./EmployeeSalary
                 '''
             }
         }
